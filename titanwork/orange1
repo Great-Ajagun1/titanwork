@@ -1,0 +1,64 @@
+Creating a local repo.
+Create a new folder on the C Drive.
+Name the folder and open the folder with the git bash.
+Run "git init" upon opening the git.
+This will create a complete repo. folder including the config folder. 
+Use "git remote add origin <link>" to add remote repo.The implication of running "git remote add origin <link>" is to fetch the online content from the cloud to the local repo.
+Pull files with "git pull"
+Push your own changes into central repo with "git push" 
+The central repo. is the repo. created from the github.
+Run "git pull origin main" to fetch the online content to the local repo.
+Before files can be added to git,  it must first be in index.
+Use "git status" to check the files present in the local repo.
+Craeting or adding a new file to the local repo without committing it, will show untracked file affected file in red. Because it has not been added to the index.
+To add the file, then run "git add" and "git status" to check the status.
+Run "git commit m "" to make comment. 
+'git add -A' is a command in Git that stages all changes in your working tree (your current directory and all its subdirectories) for commit. 
+The -A option stands for "all" and stages all changes, including deletions, modifications, and new files.
+There are two types of branches. 1. Local branches 2.Remote-tracking branches.
+
+
+Creating a git branches
+Launch the local git > type git branches + the name of branches e.g "git branches firstbranch"
+
+Switch branches
+To move or switch into branch type git checkout i.e "git checkout firstbranch"
+
+Parallel Development -Merging 
+It's a way to combine the work of different branches together.
+Allows to branch off, develop a new feature and combine it back in.
+Merging branch to master. Ensure you are in destination (master). Run this command git merge + branch name. "git merge firstbranch"
+Run git commit -a -m "Comment" To updated the changes on the local repo. To view the added content; run cat "filename"
+
+Rebase in Git
+It's a way of combining the work between different branches
+It can be used to make a linear sequence of commit.
+
+To combine different branches using the rebasing run this command "git rebase branchname e.g "git rebase firstbranch"
+
+Git Push
+Pushing git to github can be done either by https, ssh or github cli
+Check the github portal to copy your desire option
+Generate a public ssh key add the key into your github account.
+To implement the above, run "ssh-keygen". Respond to the prompt by providing passphrase and copy the specified path where the key saved and paste in there.
+
+To add the SSH Keys
+Go to the github account profile > settings > SSH and GPG Keys.
+Go to the specified path to locate the public key > open with notepad. Paste the public key into the ssh. 
+To connect to the github run this command "ssh -T git@github.com". Most times it will request for passphrase to successfully authenticate into the github.
+
+To push to Github, run "git push origin firstbranch", check the github repo. to confirm.
+
+
+Continous Integration with Jenkins
+1. Why we need Continous Integration
+2. What is Continous Integration
+3. Continous Integration
+4. What is Jenkins
+5. Jenkins Distributed Architecture.
+6. Hands-On
+
+Jenkins is the most widely acceptable and used continous integration tool. 
+
+// To install Jenkins, you need to download Java as its a major dependencies. 
+Jenkins has 2 types of projects, Freestyle and Pipeline.
