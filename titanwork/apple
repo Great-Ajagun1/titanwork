@@ -18,3 +18,5 @@ git remote
 git push
 git pull
 git stash
+git diff
+git restore 
